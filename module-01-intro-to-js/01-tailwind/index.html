@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Bungee+Hairline&family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <style type="text/tailwindcss">
+      @theme {
+        /* --color-clifford: #da373d; */
+        --font-cursive: 'Cedarville Cursive';
+      }
+
+      @layer components {
+        .list-items {
+          @apply p-2 font-bold text-white cursor-pointer hover:text-black hover:bg-orange-300;
+        }
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-orange-200 sm:max-md:bg-white font-cursive">
+    <header>
+      <nav>
+        <ul class="flex justify-around bg-orange-500">
+          <li class="list-items">Home</li>
+          <li class="list-items">About</li>
+          <li class="list-items">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="p-2 shadow-lg">
+      <h1 class="">Tailwind</h1>
+      <p class="m-[27px]">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nemo
+        facere sunt sed explicabo beatae tempore, odit qui illum illo.
+      </p>
+    </main>
+  </body>
+</html>

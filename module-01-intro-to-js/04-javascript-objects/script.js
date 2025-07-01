@@ -94,7 +94,7 @@ const personWithMethod = {
   // An arrow function would behave differently. Arrow functions don't have their own 'this' context;
   // they inherit it from the surrounding code, which often leads to unexpected behavior in object methods.
   //   sayArrow: () => {
-  //     console.log(`Hi, my name is ${this.firstName}`); // This would likely be 'undefined' in this context.
+  //     console.log(`Hi, my name is ${this.firstName}`); // This is 'undefined' in this context.
   //   },
 };
 

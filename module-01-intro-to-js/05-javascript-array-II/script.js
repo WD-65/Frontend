@@ -33,4 +33,7 @@ function multiplier(factor) {
 
 // Create a specialized function from the higher-order function.
 const double = multiplier(2); // double is now a function: (number) => number * 2
+console.log(double(3)); // Executes (3) => 3 * 2, resulting in 6.
+
 const triple = multiplier(3); // triple is now a function: (number) => number * 3
+console.log(triple(4)); // Executes (4) => 4 * 3, resulting in 12.

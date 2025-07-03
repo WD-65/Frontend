@@ -3,7 +3,7 @@ const book = {
   author: 'Harper Lee',
   pages: 281,
   isRead: true,
-  summary: function () {
+  summary() {
     return `Title: ${this.title}, Author: ${this.author}, Pages: ${
       this.pages
     }, Read: ${this.isRead ? 'Yes' : 'No'}`;

@@ -13,6 +13,7 @@ console.log('String Numbers:', stringNumbers); // Prints: String Numbers: ["Numb
 const numberObjects = numbers.map((number) => ({
   original: number,
   squared: number * number,
+  // isEven: number % 2 === 0,
 }));
 console.log('Number Objects:', numberObjects);
 // Prints: Number Objects: [

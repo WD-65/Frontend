@@ -34,18 +34,23 @@ function displayPokemon(pokemon) {
 
   // Add CSS classes for styling the card (shadow, padding, margin, layout)
   pokemonCard.classList.add(
+    'basis-36',
+    'grow',
     'shadow-md',
-    'p-4',
-    'm-2',
+    'p-2',
+    'm-1',
     'flex',
     'flex-col',
-    'items-center'
+    'items-center',
+    'rounded-lg',
+    'hover:shadow-xl',
+    'transition-shadow'
   );
 
   // Create image element for Pokemon sprite
   const pokemonImg = document.createElement('img');
   pokemonImg.src = pokemon.sprites.front_default; // Set image source from API data
-  pokemonImg.className += 'mb-4'; // Add margin bottom for spacing
+  pokemonImg.className += 'mb-2'; // Add margin bottom for spacing
 
   // Create heading element for Pokemon name
   const pokemonName = document.createElement('h2');

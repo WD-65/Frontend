@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: lemonade --default; /*Choosing one of daisyui's themese. Check https://daisyui.com/docs/themes/*/
+}
+
+@layer utility {
+  main {
+    @apply mx-2 min-h-[calc(100vh-65px-52px)] text-gray-700;
+    /*
+    Over writing some styles (min height and margin-x-axis in this example) for all main elements
+    This will apply everytime I use main elements
+    By doing this, I don't have to enter this again as classnames on the main element
+
+    min-h-[calc(100vh-65px-52px)]
+    This will first calculate 100viewport height minus 65px(Navbar height) minus 52px(Footer height)
+    The calculated value will be the minimum height of main element
+    */
+  }
+}

@@ -2,8 +2,6 @@
 
 This project is a simple, interactive personal diary application built with React and Vite. It allows users to add, view, and delete daily entries, which are stored in the browser's localStorage. The project is styled with TailwindCSS and DaisyUI.
 
-This repository is designed to be a learning tool for students who are getting started with React. The code is heavily commented to explain key concepts.
-
 ## Project Requirements
 
 This project fulfills the following functional requirements:
